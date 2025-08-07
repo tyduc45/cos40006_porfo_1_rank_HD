@@ -1,0 +1,41 @@
+# Visual Studio specific
+*.vs/
+.vs/
+*/.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+
+# Rider specific
+.idea/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+!packages/repositories.config
+
+# Windows Application Packaging Project (WapProj) specific
+AppPackages/
+BundleArtifacts/
+
+# WiX Toolset specific
+*.wixobj/
+*.wixpdb/
+*.wixout/
+
+# Other
+*.log
+*.tlog
+*.bak
+*~

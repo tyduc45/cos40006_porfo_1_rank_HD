@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ProductGroup">
+            <Component Id="cmp3C54573B769BB249FBF91EB6F407A96D" Directory="INSTALLFOLDER" Guid="A5E97DD6-77D8-49A3-9FF4-681565713651">
+                <File Id="fil2F0A6D5C480CECE186326444A331DCC0" KeyPath="yes" Source="$(var.WindowsFormsApp1.TargetDir)\HelloWorld.Business.dll" />
+            </Component>
+            
+            <Component Id="cmpBC4FC00A26E7D32479D42D3411317FC5" Directory="INSTALLFOLDER" Guid="1C56685E-3A34-4CA5-AC7D-891E95E31DBF">
+                <File Id="fil90A8AAD9FC612906D405476D61CEA3F4" KeyPath="yes" Source="$(var.WindowsFormsApp1.TargetDir)\Newtonsoft.Json.dll" />
+            </Component>
+            
+            <Component Id="cmp633D38D60F99B260BDE92B7BE1CBAE79" Directory="INSTALLFOLDER" Guid="418959F6-5F58-4E13-B716-782194CA1B3C">
+                <File Id="fil4C96B0F7EC5BB7E6E6640C8C76ABD33D" KeyPath="yes" Source="$(var.WindowsFormsApp1.TargetDir)\WindowsFormsApp1.exe" />
+            </Component>
+            <Component Id="cmpFBA122E1C290FA48D974F3677E42C1DC" Directory="INSTALLFOLDER" Guid="2F64A7BB-4629-4DA7-9C99-B3BF72C627FA">
+                <File Id="fil1C1F477E5CCCB2A98415266F8C5114BF" KeyPath="yes" Source="$(var.WindowsFormsApp1.TargetDir)\WindowsFormsApp1.exe.config" />
+            </Component>
+            
+        </ComponentGroup>
+    </Fragment>
+</Wix>
